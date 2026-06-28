@@ -60,7 +60,7 @@ export default function Timeline({ schedules, isToday, scrollRef, onEditSchedule
     e.preventDefault();
 
     const dy = getClientY(e) - ds.startY;
-    if (Math.abs(dy) > 5) didDrag.current = true;
+    if (Math.abs(dy) > 12) didDrag.current = true;
     const deltaMinutes = Math.round((dy / HOUR_HEIGHT) * 60 / SNAP_MINUTES) * SNAP_MINUTES;
     const newMinutes = ds.originalMinutes + deltaMinutes;
 

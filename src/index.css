@@ -16,3 +16,7 @@ body {
   width: 100%;
   min-height: 100svh;
 }
+
+input, textarea, select {
+  font-size: 16px !important;
+}

@@ -75,7 +75,7 @@ function App() {
       {/* FAB */}
       <button
         onClick={() => setShowScheduleModal(true)}
-        className="fixed bottom-6 right-6 w-14 h-14 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-3xl rounded-full shadow-lg flex items-center justify-center z-20"
+        className="fixed bottom-6 right-6 w-14 h-14 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-3xl rounded-full shadow-lg flex items-center justify-center z-40"
       >
         +
       </button>

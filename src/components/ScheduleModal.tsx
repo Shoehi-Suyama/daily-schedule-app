@@ -39,7 +39,7 @@ export default function ScheduleModal({ initial, onSave, onDelete, onClose }: Pr
 
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/40" onClick={onClose}>
-      <div className="bg-white rounded-t-2xl w-full max-w-md p-5 shadow-xl" onClick={e => e.stopPropagation()}>
+      <div className="bg-white rounded-t-2xl w-full p-5 shadow-xl" onClick={e => e.stopPropagation()}>
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-base font-semibold text-gray-800">{isEdit ? '予定を編集' : '予定を追加'}</h2>
           {isEdit && onDelete && (

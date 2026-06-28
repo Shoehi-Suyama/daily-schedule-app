@@ -44,7 +44,7 @@ function App() {
   const todayFlag = isToday(dateStr);
 
   return (
-    <div className="max-w-md mx-auto min-h-screen bg-gray-100 flex flex-col select-none">
+    <div className="max-w-md mx-auto h-screen overflow-hidden bg-gray-100 flex flex-col select-none">
       <DateBar
         dateStr={dateStr}
         onPrev={() => navigateTo(addDays(dateStr, -1))}

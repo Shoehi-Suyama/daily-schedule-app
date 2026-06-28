@@ -50,8 +50,10 @@ export default function Timeline({ schedules, isToday, scrollRef, onEditSchedule
   useEffect(() => { localSchedulesRef.current = localSchedules; }, [localSchedules]);
 
   useEffect(() => {
-    if (isToday && nowRef.current) {
-      nowRef.current.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    if (isToday && scrollRef.current) {
+      const el = scrollRef.current;
+      const targetTop = (nowMinutes / 60) * HOUR_HEIGHT - el.clientHeight / 2;
+      el.scrollTop = Math.max(0, targetTop);
     }
   }, [isToday]);
 

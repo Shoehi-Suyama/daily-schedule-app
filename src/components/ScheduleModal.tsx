@@ -58,16 +58,16 @@ export default function ScheduleModal({ initial, onSave, onDelete, onClose }: Pr
           className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-blue-400 mb-3"
         />
 
-        <div className="flex gap-3 mb-3">
-          <div className="flex-1">
+        <div className="grid grid-cols-2 gap-3 mb-3">
+          <div>
             <label className="text-xs text-gray-500 mb-1 block">開始</label>
             <input type="time" value={startTime} onChange={e => setStartTime(e.target.value)}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-blue-400" />
+              className="w-full min-w-0 border border-gray-200 rounded-lg px-2 py-2 outline-none focus:border-blue-400" />
           </div>
-          <div className="flex-1">
+          <div>
             <label className="text-xs text-gray-500 mb-1 block">終了</label>
             <input type="time" value={endTime} onChange={e => setEndTime(e.target.value)}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-blue-400" />
+              className="w-full min-w-0 border border-gray-200 rounded-lg px-2 py-2 outline-none focus:border-blue-400" />
           </div>
         </div>
 

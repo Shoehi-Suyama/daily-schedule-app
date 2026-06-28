@@ -228,11 +228,9 @@ export default function Timeline({ schedules, isToday, scrollRef, onEditSchedule
                 >
                   <div className="w-8 h-1 rounded-full bg-white/60" />
                 </div>
-                <div className="px-2 pt-4 pb-4 overflow-hidden" style={{ maxHeight: height - 16 }}>
-                  <div className="font-medium truncate leading-tight">{item.title}</div>
-                  {height >= 48 && (
-                    <div className="text-xs opacity-80 truncate">{item.startTime}〜{item.endTime}</div>
-                  )}
+                <div className="absolute inset-x-2 flex items-center gap-1 overflow-hidden" style={{ top: 8, bottom: 8 }}>
+                  <span className="font-medium truncate flex-1 leading-tight text-xs">{item.title}</span>
+                  <span className="text-xs opacity-80 shrink-0 leading-tight">{item.startTime}〜{item.endTime}</span>
                 </div>
                 <div
                   onMouseDown={e => startDrag(e, item.id, 'bottom')}

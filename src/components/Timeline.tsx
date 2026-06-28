@@ -245,7 +245,7 @@ export default function Timeline({ schedules, isToday, scrollRef, onEditSchedule
             <div
               ref={nowRef}
               className="absolute left-12 right-0 flex items-center"
-              style={{ top: (nowMinutes / 60) * HOUR_HEIGHT }}
+              style={{ top: (nowMinutes / 60) * HOUR_HEIGHT, zIndex: 20 }}
             >
               <div className="w-2 h-2 rounded-full bg-red-500 -translate-x-1" />
               <div className="flex-1 border-t-2 border-red-500" />

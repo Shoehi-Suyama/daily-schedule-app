@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- 背景 -->
+  <rect width="512" height="512" rx="80" fill="#8dbdb5"/>
+
+  <!-- カレンダー本体 -->
+  <rect x="72" y="120" width="368" height="330" rx="28" fill="#f5ede0"/>
+
+  <!-- ヘッダー（ピンク） -->
+  <rect x="72" y="120" width="368" height="110" rx="28" fill="#e07f88"/>
+  <rect x="72" y="178" width="368" height="52" fill="#e07f88"/>
+
+  <!-- リング（上部） -->
+  <rect x="152" y="82" width="30" height="70" rx="15" fill="#5a4a46"/>
+  <rect x="241" y="82" width="30" height="70" rx="15" fill="#5a4a46"/>
+  <rect x="330" y="82" width="30" height="70" rx="15" fill="#5a4a46"/>
+
+  <!-- 日付グリッド（3行×4列） -->
+  <!-- 行1 -->
+  <rect x="104" y="252" width="62" height="52" rx="10" fill="#7a6460"/>
+  <rect x="186" y="252" width="62" height="52" rx="10" fill="#7a6460"/>
+  <rect x="268" y="252" width="62" height="52" rx="10" fill="#e07f88"/>
+  <rect x="350" y="252" width="62" height="52" rx="10" fill="#7a6460"/>
+
+  <!-- 行2 -->
+  <rect x="104" y="320" width="62" height="52" rx="10" fill="#7a6460"/>
+  <rect x="186" y="320" width="62" height="52" rx="10" fill="#6aaa5e"/>
+  <rect x="268" y="320" width="62" height="52" rx="10" fill="#7a6460"/>
+  <rect x="350" y="320" width="62" height="52" rx="10" fill="#e07f88"/>
+
+  <!-- 行3 -->
+  <rect x="104" y="388" width="62" height="52" rx="10" fill="#7a6460"/>
+  <rect x="186" y="388" width="62" height="52" rx="10" fill="#7a6460"/>
+  <rect x="268" y="388" width="62" height="52" rx="10" fill="#7a6460"/>
+  <rect x="350" y="388" width="62" height="52" rx="10" fill="#e07f88"/>
+</svg>

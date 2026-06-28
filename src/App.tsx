@@ -16,7 +16,6 @@ function App() {
   const [showScheduleModal, setShowScheduleModal] = useState(false);
 
   const timelineRef = useRef<HTMLDivElement>(null);
-  const touchStartX = useRef<number | null>(null);
   const isAnimating = useRef(false);
 
   function navigateTo(newDate: string) {
@@ -41,28 +40,10 @@ function App() {
     });
   }
 
-  // Swipe handling
-  function handleTouchStart(e: React.TouchEvent) {
-    touchStartX.current = e.touches[0].clientX;
-  }
-
-  function handleTouchEnd(e: React.TouchEvent) {
-    if (touchStartX.current === null) return;
-    const dx = e.changedTouches[0].clientX - touchStartX.current;
-    touchStartX.current = null;
-    if (Math.abs(dx) < 50) return;
-    if (dx < 0) navigateTo(addDays(dateStr, 1));
-    else navigateTo(addDays(dateStr, -1));
-  }
-
   const todayFlag = isToday(dateStr);
 
   return (
-    <div
-      className="max-w-md mx-auto min-h-screen bg-gray-100 flex flex-col select-none"
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
-    >
+    <div className="max-w-md mx-auto min-h-screen bg-gray-100 flex flex-col select-none">
       <DateBar
         dateStr={dateStr}
         onPrev={() => navigateTo(addDays(dateStr, -1))}

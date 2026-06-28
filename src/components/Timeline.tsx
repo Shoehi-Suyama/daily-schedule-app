@@ -116,7 +116,7 @@ export default function Timeline({ schedules, isToday, scrollRef, onEditSchedule
   const nowMinutes = now.getHours() * 60 + now.getMinutes();
 
   return (
-    <div ref={scrollRef} className="overflow-y-auto bg-white rounded-xl mx-3 my-2 shadow-sm" style={{ maxHeight: '55vh' }}>
+    <div ref={scrollRef} className="overflow-y-auto bg-white rounded-xl mx-3 my-2 shadow-sm" style={{ maxHeight: '72vh' }}>
       <div ref={containerRef} className="relative" style={{ height: HOUR_HEIGHT * 24 }}>
         {HOURS.map(h => (
           <div
